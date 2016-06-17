@@ -1,0 +1,283 @@
+###############################################################################
+#
+# IAR ELF Linker V7.30.1.7746/W32 for ARM                 29/Sep/2015  17:02:15
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Exe\LabBIN Configuration.out
+#    Map file     =  
+#        C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration/List\LabBIN Configuration.map
+#    Command line =  
+#        "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\gpio.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\main.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\startup_stm32f030x8.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_cortex.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_dma.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_flash.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_flash_ex.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_gpio.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_msp.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_pwr.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_pwr_ex.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_rcc.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_hal_rcc_ex.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\stm32f0xx_it.o" "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Obj\system_stm32f0xx.o" --redirect _Printf=_PrintfFull
+#        --redirect _Scanf=_ScanfFull -o "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration\Exe\LabBIN Configuration.out" --map "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN
+#        Configuration/List\LabBIN Configuration.map" --config "C:\Users\bruno
+#        montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\stm32f030x8_flash.icf"
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08003000 { ro section .intvec };
+"P1":  place in [from 0x08003000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A1":                                      0xb4
+  .intvec            ro code  0x08003000   0xb4  startup_stm32f030x8.o [1]
+                            - 0x080030b4   0xb4
+
+"P1":                                     0xc7c
+  .text              ro code  0x080030b4  0x5f8  stm32f0xx_hal_rcc.o [1]
+  .text              ro code  0x080036ac   0x70  stm32f0xx_hal.o [1]
+  .text              ro code  0x0800371c   0x34  ABImemcpy.o [4]
+  .text              ro code  0x08003750   0xae  I32DivModFast.o [4]
+  .text              ro code  0x080037fe    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003800   0x28  stm32f0xx_hal_msp.o [1]
+  .text              ro code  0x08003828   0x92  stm32f0xx_hal_cortex.o [1]
+  .text              ro code  0x080038ba    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x080038bc    0x2  IntDivZer.o [4]
+  .text              ro code  0x080038be    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x080038c0  0x1ac  stm32f0xx_hal_gpio.o [1]
+  .text              ro code  0x08003a6c   0xb2  main.o [1]
+  .text              ro code  0x08003b1e    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003b20   0x8c  gpio.o [1]
+  .text              ro code  0x08003bac   0x60  system_stm32f0xx.o [1]
+  .text              ro code  0x08003c0c   0x30  copy_init3.o [4]
+  .text              ro code  0x08003c3c   0x28  data_init.o [4]
+  .iar.init_table    const    0x08003c64   0x14  - Linker created -
+  .text              ro code  0x08003c78   0x1a  cmain.o [4]
+  .text              ro code  0x08003c92    0x4  low_level_init.o [3]
+  .text              ro code  0x08003c96    0x8  exit.o [3]
+  .text              ro code  0x08003c9e    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003ca0    0xa  cexit.o [4]
+  .text              ro code  0x08003caa    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cac   0x14  exit.o [5]
+  .text              ro code  0x08003cc0   0x10  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cd0    0xc  stm32f0xx_it.o [1]
+  .text              ro code  0x08003cdc    0xc  cstartup_M.o [4]
+  .text              ro code  0x08003ce8    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cea    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cec    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cee    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cf0    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cf2    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cf4    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cf6    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cf8    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cfa    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cfc    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003cfe    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d00    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d02    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d04    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d06    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d08    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d0a    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d0c    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d0e    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d10    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d12    0x2  startup_stm32f030x8.o [1]
+  .text              ro code  0x08003d14    0x2  startup_stm32f030x8.o [1]
+  .rodata            const    0x08003d16    0x0  copy_init3.o [4]
+  Initializer bytes  ro data  0x08003d18   0x18  <for P2 s0>
+                            - 0x08003d30  0xc7c
+
+"P2":                                     0x418
+  P2 s0                       0x20000000   0x18  <Init block>
+    .data            inited   0x20000000   0x14  system_stm32f0xx.o [1]
+    .bss             inited   0x20000014    0x4  stm32f0xx_hal.o [1]
+  CSTACK                      0x20000018  0x400  <Block>
+    CSTACK           uninit   0x20000018  0x400  <Block tail>
+                            - 0x20000418  0x418
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x18:
+          0x08003d18  0x18
+    1 destination range, total size 0x18:
+          0x20000000  0x18
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\bruno montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN Configuration\Obj: [1]
+    gpio.o                      140
+    main.o                      178
+    startup_stm32f030x8.o       254
+    stm32f0xx_hal.o             112        4        4
+    stm32f0xx_hal_cortex.o      146
+    stm32f0xx_hal_gpio.o        428
+    stm32f0xx_hal_msp.o          40
+    stm32f0xx_hal_rcc.o       1 528
+    stm32f0xx_it.o               12
+    system_stm32f0xx.o           96       20       20
+    -------------------------------------------------
+    Total:                    2 934       24       24
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl6M_tlf.a: [3]
+    exit.o                        8
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       12
+
+rt6M_tl.a: [4]
+    ABImemcpy.o                  52
+    I32DivModFast.o             174
+    IntDivZer.o                   2
+    cexit.o                      10
+    cmain.o                      26
+    copy_init3.o                 48
+    cstartup_M.o                 12
+    data_init.o                  40
+    -------------------------------------------------
+    Total:                      364
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Linker created                        22    1 024
+-----------------------------------------------------
+    Grand Total:              3 330       46    1 048
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x08003c79         Code  Gb  cmain.o [4]
+AHBPrescTable           0x20000000   0x10  Data  Gb  system_stm32f0xx.o [1]
+CSTACK$$Base            0x20000018          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000418          --   Gb  - Linker created -
+HAL_Delay               0x080036fb   0x18  Code  Wk  stm32f0xx_hal.o [1]
+HAL_GPIO_Init           0x080038c1  0x18a  Code  Gb  stm32f0xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin      0x08003a4b    0x8  Code  Gb  stm32f0xx_hal_gpio.o [1]
+HAL_GetTick             0x080036f5    0x6  Code  Wk  stm32f0xx_hal.o [1]
+HAL_IncTick             0x080036eb    0xa  Code  Wk  stm32f0xx_hal.o [1]
+HAL_Init                0x080036ad   0x1a  Code  Gb  stm32f0xx_hal.o [1]
+HAL_InitTick            0x080036c7   0x24  Code  Wk  stm32f0xx_hal.o [1]
+HAL_MspInit             0x08003801   0x28  Code  Gb  stm32f0xx_hal_msp.o [1]
+HAL_NVIC_SetPriority    0x0800385b    0x8  Code  Gb  stm32f0xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig     0x08003441  0x1a4  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x0800363d   0x1c  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x080035e9   0x52  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x080030b5  0x388  Code  Gb  stm32f0xx_hal_rcc.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                        0x0800388b   0x18  Code  Gb  stm32f0xx_hal_cortex.o [1]
+HAL_SYSTICK_Callback    0x080038b9    0x2  Code  Wk  stm32f0xx_hal_cortex.o [1]
+HAL_SYSTICK_Config      0x08003863   0x28  Code  Gb  stm32f0xx_hal_cortex.o [1]
+HAL_SYSTICK_IRQHandler  0x080038b1    0x8  Code  Gb  stm32f0xx_hal_cortex.o [1]
+MX_GPIO_Init            0x08003b21   0x8c  Code  Gb  gpio.o [1]
+NVIC_SetPriority        0x08003829   0x32  Code  Lc  stm32f0xx_hal_cortex.o [1]
+Region$$Table$$Base     0x08003c64          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08003c78          --   Gb  - Linker created -
+SysTick_Handler         0x08003cd1    0xc  Code  Gb  stm32f0xx_it.o [1]
+SystemClock_Config      0x08003ad1   0x4e  Code  Gb  main.o [1]
+SystemCoreClock         0x20000010    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit              0x08003bad   0x48  Code  Gb  system_stm32f0xx.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff          --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000          --   Gb  command line/config [2]
+__aeabi_idiv0           0x080038bd         Code  Gb  IntDivZer.o [4]
+__aeabi_memcpy4         0x0800371d         Code  Wk  ABImemcpy.o [4]
+__aeabi_uidiv           0x08003751         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x08003751         Code  Gb  I32DivModFast.o [4]
+__cmain                 0x08003c79         Code  Gb  cmain.o [4]
+__exit                  0x08003cad   0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x08003c0d   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x08003c3d   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x08003cdd         Code  Gb  cstartup_M.o [4]
+__low_level_init        0x08003c93    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08003000         Data  Gb  startup_stm32f030x8.o [1]
+_call_main              0x08003c85         Code  Gb  cmain.o [4]
+_exit                   0x08003ca1         Code  Gb  cexit.o [4]
+_main                   0x08003c8f         Code  Gb  cmain.o [4]
+aAPBAHBPrescTable       0x0800367c   0x10  Data  Gb  stm32f0xx_hal_rcc.o [1]
+exit                    0x08003c97    0x8  Code  Gb  exit.o [3]
+main                    0x08003a6d   0x56  Code  Gb  main.o [1]
+uwTick                  0x20000014    0x4  Data  Lc  stm32f0xx_hal.o [1]
+
+
+[1] = C:\Users\bruno montanari\Desktop\projetos\stm32\FullGauge\LabBIN\EWARM\LabBIN Configuration\Obj
+[2] = command line
+[3] = dl6M_tlf.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  3 330 bytes of readonly  code memory
+     46 bytes of readonly  data memory
+  1 048 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
