@@ -427,6 +427,7 @@ COM_StatusTypeDef Ymodem_Receive ( uint32_t *p_size )
           else
           {
             Serial_PutByte(CRC16); /* Ask for a packet */
+            Serial_PutByte(huart,ACK); //BFM
           }
           break;
       }
